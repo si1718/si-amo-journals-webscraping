@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 public class JournalScimagoJsoup {
 	public final static String SCIMAGO_URL_BASE = "http://www.scimagojr.com/journalrank.php";
 
-	public static List<String> getJournalsTitlesFromScimago(String[] args) throws MalformedURLException, IOException {
+	public static List<String> getJournalsTitlesFromScimago() throws MalformedURLException, IOException {
 
 		List<String> searchURLsList = new ArrayList<String>();
 		int i = 0;
@@ -46,3 +46,4 @@ public class JournalScimagoJsoup {
 		return journalsTitleList;
 	}
 }
+
